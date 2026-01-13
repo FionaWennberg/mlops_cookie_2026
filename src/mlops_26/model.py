@@ -14,7 +14,6 @@ class MyAwesomeModel(nn.Module):
         self.fc1 = nn.Linear(128, 10)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-
         # # Just testing value errors
         # if x.ndim != 4:
         #     raise ValueError('Expected input to a 4D tensor')
@@ -27,7 +26,6 @@ class MyAwesomeModel(nn.Module):
         # Expect (batch, channels, height, width) = (N, 1, 28, 28)
         if x.shape[1:] != (1, 28, 28):
             raise ValueError("Expected each sample to have shape [1, 28, 28]")
-
 
         """Forward pass."""
 
