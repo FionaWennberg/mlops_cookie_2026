@@ -53,3 +53,9 @@ The directory structure of the project looks like this:
 Created using [mlops_template](https://github.com/SkafteNicki/mlops_template),
 a [cookiecutter template](https://github.com/cookiecutter/cookiecutter) for getting
 started with Machine Learning Operations (MLOps).
+
+test_train.py:
+- Here i am testing if my training pipeline works. The test that I am currently running is essentially answering the question: “Given valid data and a valid model, my training script can run end-to-end and produce the expected artifacts.”
+
+Testing branch-rule1.
+
