@@ -1,5 +1,6 @@
 import torch
 from mlops_26.model import MyAwesomeModel
+import pytest
 
 def test_dimensions():
     model = MyAwesomeModel()
@@ -9,8 +10,6 @@ def test_dimensions():
 
 
 # tests/test_model.py
-import pytest
-from mlops_26.model import MyAwesomeModel
 
 def test_error_on_wrong_shape():
     model = MyAwesomeModel()
@@ -26,5 +25,4 @@ def test_model(batch_size):
     x = torch.randn(batch_size, 1, 28, 28)
     y = model(x)
     assert y.shape == (batch_size, 10)
-
 
