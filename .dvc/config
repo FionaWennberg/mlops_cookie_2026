@@ -1,0 +1,5 @@
+[core]
+    remote = gcsremote
+['remote "gcsremote"']
+    url = gs://dtumlops_bucket_fiona
+    version_aware = true
